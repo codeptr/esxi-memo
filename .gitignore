@@ -1,0 +1,7 @@
+# Useless files #
+######################
+.vscode
+
+# Exclude files #
+######################
+!.gitkeep

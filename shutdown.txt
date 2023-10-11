@@ -1,0 +1,22 @@
+使用 ESXi 命令行:
+vim-cmd vmsvc/getallvms
+vim-cmd vmsvc/power.shutdown VMID
+vim-cmd vmsvc/power.off VMID
+
+使用 ESXi esxcli 命令:
+esxcli vm process list
+esxcli vm process kill -t=soft -w=WorldID
+esxcli vm process kill -t=hard -w=WorldID
+esxcli vm process kill -t=force -w=WorldID
+
+进入维护模式:
+vim-cmd:
+vim-cmd hostsvc/maintenance_mode_enter
+vim-cmd hostsvc/maintenance_mode_exit
+esxcli:
+esxcli system maintenanceMode get
+esxcli system maintenanceMode set --enable=true
+esxcli system maintenanceMode set --enable=false
+
+esxcli system shutdown reboot -r 原因
+esxcli system shutdown poweroff -r 原因
