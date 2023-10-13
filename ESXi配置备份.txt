@@ -1,0 +1,10 @@
+# 将已更改的配置与持久存储同步
+vim-cmd hostsvc/firmware/sync_config
+
+# 备份
+vim-cmd hostsvc/firmware/backup_config
+会显示下载链接，或者可以在 /scratch/downloads 目录中找到
+
+# 还原
+# 把备份文件放到 /tmp 目录，并改名为 configBundle.tgz
+vim-cmd hostsvc/firmware/restore_config force

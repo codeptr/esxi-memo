@@ -1,0 +1,8 @@
+esxcli software profile update --help
+
+esxcli software sources profile list -d /vmfs/volumes/datastore1/sources/VMware-VMvisor-Installer-7.0.0.update03-21930508.x86_64-Dell_Customized-A15.zip
+Name                       Vendor     Acceptance Level  Creation Time        Modification Time
+-------------------------  ---------  ----------------  -------------------  -----------------
+DEL-ESXi-703_18644231-A00  Dell Inc.  PartnerSupported  2021-09-23T06:43:04  2021-09-23T06:43:04
+
+esxcli software profile update -d /vmfs/volumes/datastore1/sources/VMware-VMvisor-Installer-7.0.0.update03-21930508.x86_64-Dell_Customized-A15.zip -p DEL-ESXi-703_21930508-A15
