@@ -1,0 +1,6 @@
+Port Groups:
+    1、供 Virtual Machines 和 VMkernel NICs 网络接入;
+    2、当 VMkernel NIC 接入某 Port Group 后，Virtual Machine 接入则无此 Port Group 选项。
+Virtual Switches: 供 Port Groups 接入的内部交换机；
+Physical NICs: 物理网卡；
+VMkernel NICs: VM核心内部虚拟网卡；
